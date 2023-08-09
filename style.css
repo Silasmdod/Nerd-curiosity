@@ -1,82 +1,70 @@
-html, body
-{
+html, body{
     margin: 0;
     padding: 0;
     font-family: 'Amatic SC', cursive;
 }
 
-main
-{
-    width: 80%;
+main{
+    width: 100%;
 
     min-width: 000px;
+    
 
 }
 
-header
-{
-    width: 80%;
-    margin-left: 10%;
+header{
+    width: 100%;
     background-color: cadetblue;
     height: 140px;
     position: fixed;
 
 }
 
-nav
-{
-    width: 9%;
-    margin-top: 100px;
-    margin-left: 5.5%;
-    text-decoration: none;
-   
 
-
-
-    
-
-}
-
-nav, ul
-{
-    
+nav ,ul{
+    margin: 0;
     padding: 0;
-    list-style: none;
-    position: fixed;
-    
-    
-
-}
-
-nav, ul, li , a
-{
-    font-size: 1.2em;
-    display: inline-block;
     text-align: center;
-    text-decoration: none;
-    color: aliceblue;
+    margin-left: -40%; /*para ficar mais próximo da esquerda*/
+    
+    
+    
+    
+
+}
+
+nav ,ul , li{
+    list-style-type:none; /*Não lembro para o que é*/
+    display: inline; /*Serve para um ficar do lado do outro*/
+    
+    
+}
+
+nav, ul, li, a{
+    padding: 10px 2px; /*Para criar distância de uma âncora da outra (item da lista)*/
+    
+    text-decoration: none; /* Para tirar a decoração do texto da ancora*/
     background-color: cadetblue;
-    
-    
-    
+    color: aliceblue;
+    display: inline-block;/*Para criar uma distância do topo*/
+    margin-top: 22px;
+    height: 30px;
+    font-size: 1.2em;
+
 
 }
 
-nav, ul, li, a:hover
-{
+nav, ul, li, a:hover{
     background-color: rgb(16, 119, 122);
-
 }
 
-header, h1
-{
+header, h1{
     text-align: center;
     font-size: 2.5em;
     margin-top: -2px;
 }
 
-#nerdmotion
-{
+#nerdmotion{
     margin-top: 10px;
     width: 100px;
     position: relative;
@@ -85,29 +73,38 @@ header, h1
 
 
 
-article
-{
+.conteudo{
     width: 40%;
+    height: 35%;
     float: left;
     margin-top: 1%;
-    margin-left: 13%;
+    margin-left: 5%;
     margin-bottom:20px;
+    
+    /*background-color: antiquewhite;*/ /*Deixei esse background-color somente para poder averiguar os espaços*/
     
     
     
 
 }
 
-.conteudo h2
-{
+.conteudo h2{ /* quando está "conteudo h2" é somente o h2 do conteudo que está sendo modificado, quando está
+    conteudo, h2 é tudo o que está dentro do conteudo mais a tag h2 sendo modificado!*/
+    font-family: 'Bangers', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+
     padding-top: 180px;
-    font-size: 4em;
+    font-size: 5em;
     z-index: 1;
 
 }
 
-#ashe
+.conteudo h2:hover
 {
+    color: rgb(0, 183, 255);
+}
+
+#ashe{
     width: 350px;
     margin-top: -200px;
     z-index: 0;
@@ -126,35 +123,46 @@ article
 */
 
 
-.conteudo p
-{
+.conteudo p{
+    color: rgb(0, 0, 0);
     margin-top: -40px;
+    padding-left: 3%;
     font-size: 2em;
     z-index: 1;
     
 }
 
-section
-{
+#reino{
     width: 40%;
     font-size: 2.1em;
     float: right;
-    margin-left: 50px;
+    margin-right: 5%;
     margin-top: 198px;
+    /*background-color: antiquewhite;*/ /*Deixei esse background-color somente para poder averiguar os espaços*/
     
 }
 
+section h2{
+    font-size: 2.2em;
+    font-family: 'Bangers', cursive;
+font-family: 'Bebas Neue', sans-serif;
+}
 
-#freljord
-{
+section h2:hover{
+    color: rgb(0, 183, 255);
+
+}
+
+
+#freljord{
 
     width: 430px;
     box-shadow:0 0 10px #999999;
 }
 
-#conteudo2
-{
+#conteudo2{
     width: 40%;
+    margin-left: 5%;
     clear: both;
     float:left;
     margin-right: -55px;
@@ -162,15 +170,20 @@ section
     
 }
 
+#conteudo2 h2{
+    font-size: 4.6em;
+    font-family: 'Bangers', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
 
 
 
-footer
-{
+
+footer{
     clear:both;
     width:100%;
-    margin-left: 12%;
-    height:60px;
+    height:140px;
     background-color:cadetblue;
 
 
